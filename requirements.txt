@@ -1,5 +1,2 @@
 numpy
-sklearn
-scipy
-gensim
-nltk
+scikit-learn

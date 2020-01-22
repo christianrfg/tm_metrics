@@ -2,6 +2,20 @@ import numpy as np
 
 
 def pmi(topic_words, word_frequency, word_doc_frequency, n_docs, normalise=False):
+    """Small comment.
+
+    Large comment ...
+
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
+
+    Returns:
+        Large comment...
+    """
     n_top = len(topic_words)
     pmi = 0.0
     npmi = 0.0

@@ -2,6 +2,20 @@ import scipy.spatial.distance as sci_dist
 
 
 def topic_w2v(topic_words, word_embedding):
+    """Small comment.
+
+    Large comment ...
+
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
+
+    Returns:
+        Large comment...
+    """
     cosine_distance = 0.0
     l1_distance = 0.0
     l2_distance = 0.0

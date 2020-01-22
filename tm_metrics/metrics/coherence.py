@@ -2,28 +2,19 @@ import numpy as np
 
 
 def coherence(topic_words, word_frequency, word_frequency_in_documents, smoothing=1.0):
-    """
-    Description
-    -----------
-    TODO
+    """Small comment.
 
-    Parameters
-    -----------
-    :param topic: str
-        TODO
-    :param documents: list
-        TODO
-    :param smoothing: float
-        TODO
+    Large comment ...
 
-    Return
-    -----------
-    :return metric_value: float
-        TODO
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
 
-    Example
-    -----------
-    TODO
+    Returns:
+        Large comment...
     """
     n_top_words = len(topic_words)
     metric_value = 0.0

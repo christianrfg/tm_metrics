@@ -2,28 +2,19 @@ import numpy as np
 
 
 def tfidf_coherence(topic_words, tfidf_matrix_transpose, vocabulary, smoothing=1.0):
-    """
-    Description
-    -----------
-    TODO
+    """Small comment.
 
-    Parameters
-    -----------
-    :param topic: str
-        TODO
-    :param tfidf_matrix_transpose: list
-        TODO
-    :param smoothing: float
-        TODO
+    Large comment ...
 
-    Return
-    -----------
-    :return metric_value: float
-        TODO
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
 
-    Example
-    -----------
-    TODO
+    Returns:
+        Large comment...
     """
     n_top_words = len(topic_words)
     metric_value = 0.0

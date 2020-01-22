@@ -8,8 +8,8 @@ def get_tfidf_matrices(documents):
     TF-IDF matrix and the transposed, that are both used in the topic quality metrics.
 
     Args:
-        documents: type, default="x"
-            Small comment...
+        documents: list
+            List where each element is a entire document.
 
     Returns:
         Large comment...
@@ -22,24 +22,19 @@ def get_tfidf_matrices(documents):
 
 
 def get_vocabulary(documents):
-    """
-    Description
-    -----------
-    TODO
+    """Small comment.
 
-    Parameters
-    -----------
-    :param documents: list
-        TODO
+    Large comment ...
 
-    Return
-    -----------
-    :return vocabulary: list
-        TODO
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
 
-    Example
-    -----------
-    TODO
+    Returns:
+        Large comment...
     """
     cv_model = CountVectorizer(binary=True)
     cv_model.fit(documents)
@@ -51,23 +46,19 @@ def get_vocabulary(documents):
 
 
 def get_word_frequencies(documents):
-    """
-    Description
-    -----------
-    TODO
+    """Small comment.
 
-    Parameters
-    -----------
-    :param documents: list
-        TODO
+    Large comment ...
 
-    Returns
-    -----------
-    :returns:
+    Args:
+        arg1: type, default="x"
+            Small comment ...
+        arg2: type, default="x"
+            Small comment ...
+        ...
 
-    Example
-    -----------
-    TODO
+    Returns:
+        Large comment...
     """
     cv_model = CountVectorizer(binary=True)
     tf_matrix = cv_model.fit_transform(documents)

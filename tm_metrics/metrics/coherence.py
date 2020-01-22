@@ -1,9 +1,7 @@
 import numpy as np
 
-from .feature_extraction.text import get_word_frequencies
 
-
-def coherence(topic, documents, smoothing=1.0):
+def coherence(topic_words, word_frequency, word_frequency_in_documents, smoothing=1.0):
     """
     Description
     -----------
@@ -27,16 +25,13 @@ def coherence(topic, documents, smoothing=1.0):
     -----------
     TODO
     """
-    top_words = topic.split()
-    n_top_words = len(top_words)
+    n_top_words = len(topic_words)
     metric_value = 0.0
 
-    word_frequency, word_frequency_in_documents = get_word_frequencies(documents)
-
-    for m in range(1, n_top_words):
-        for l in range(0, m):
-            word_1 = top_words[m]
-            word_2 = top_words[l]
+    for w1 in range(1, n_top_words):
+        for w2 in range(0, w1):
+            word_1 = topic_words[w1]
+            word_2 = topic_words[w2]
 
             word_frequency_1 = word_frequency_in_documents[word_1]
             word_frequency_2 = word_frequency_in_documents[word_2]

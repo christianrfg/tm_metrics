@@ -12,7 +12,10 @@ def get_tfidf_matrices(documents):
             List where each element is a entire document.
 
     Returns:
-        Large comment...
+        tfidf_matrix: sparse matrix
+            TF-IDF matrix.
+        tfidf_matrix_transpose: sparse matrix
+            TF-IDF matrix transposed.
     """
     tfidf_vec_model = TfidfVectorizer()
     tfidf_matrix = tfidf_vec_model.fit_transform(documents)
@@ -22,19 +25,17 @@ def get_tfidf_matrices(documents):
 
 
 def get_vocabulary(documents):
-    """Small comment.
+    """Generates the corpus vocabulary.
 
-    Large comment ...
+    Generates the corpus vocabulary from the CountVectorizer of Scikit-Learn.
 
     Args:
-        arg1: type, default="x"
-            Small comment ...
-        arg2: type, default="x"
-            Small comment ...
-        ...
+        documents: list
+            List where each element is a entire document.
 
     Returns:
-        Large comment...
+        vocabulary: list
+            List of words present in the corpus.
     """
     cv_model = CountVectorizer(binary=True)
     cv_model.fit(documents)
@@ -46,19 +47,19 @@ def get_vocabulary(documents):
 
 
 def get_word_frequencies(documents):
-    """Small comment.
+    """Word frequencies in documents.
 
-    Large comment ...
+    Count frequency of words and frequency of words in documents.
 
     Args:
-        arg1: type, default="x"
-            Small comment ...
-        arg2: type, default="x"
-            Small comment ...
-        ...
+        documents: list
+            List where each element is a entire document.
 
     Returns:
-        Large comment...
+        word_frequency: dict
+            Frequency of each word in corpus.
+        word_frequency_in_documens: dict
+            Frequency of each word for each document in corpus.
     """
     cv_model = CountVectorizer(binary=True)
     tf_matrix = cv_model.fit_transform(documents)

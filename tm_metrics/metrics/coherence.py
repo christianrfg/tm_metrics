@@ -2,19 +2,23 @@ import numpy as np
 
 
 def coherence(topic_words, word_frequency, word_frequency_in_documents, smoothing=1.0):
-    """Small comment.
+    """Coherence topic quality metric for a topic.
 
-    Large comment ...
+    Calculates the Coherence topic quality metric for one individual topic based on the topic words.
 
     Args:
-        arg1: type, default="x"
-            Small comment ...
-        arg2: type, default="x"
-            Small comment ...
-        ...
+        topic_words: list
+            Words that compose one individual topic.
+        word_frequency: dict
+            Frequency of each word in corpus.
+        word_frequency_in_documents: dict
+            Frequency of each word for each document in corpus.
+        smoothing: float, default=1.0
+            Smoothing value for the coherence metric.
 
     Returns:
-        Large comment...
+        metric_value: float
+            Resultant Coherence metric value for the topic.
     """
     n_top_words = len(topic_words)
     metric_value = 0.0

@@ -2,19 +2,23 @@ import numpy as np
 
 
 def tfidf_coherence(topic_words, tfidf_matrix_transpose, vocabulary, smoothing=1.0):
-    """Small comment.
+    """TFIDF-Coherence topic quality metric for a topic.
 
-    Large comment ...
+    Calculates the TFIDF-Coherence topic quality metric for one individual topic based on the topic words.
 
     Args:
-        arg1: type, default="x"
-            Small comment ...
-        arg2: type, default="x"
-            Small comment ...
-        ...
+        topic_words: list
+            Words that compose one individual topic.
+        tfidf_matrix_transpose: dict
+            Frequency of each word in corpus.
+        vocabulary: dict
+            Frequency of each word for each document in corpus.
+        smoothing: float, default=1.0
+            Smoothing value for the TFIDF-Coherence metric.
 
     Returns:
-        Large comment...
+        metric_value: float
+            Resultant Coherence metric value for the topic.
     """
     n_top_words = len(topic_words)
     metric_value = 0.0

@@ -2,19 +2,26 @@ import scipy.spatial.distance as sci_dist
 
 
 def topic_w2v(topic_words, word_embedding):
-    """Small comment.
+    """Word Embedding topic quality metric for a topic.
 
-    Large comment ...
+    Calculates the Cosine Distance, L1 Distance, L2 Distance and Coordinate Distance topic quality metrics
+    for one individual topic based on the topic words.
 
     Args:
-        arg1: type, default="x"
-            Small comment ...
-        arg2: type, default="x"
-            Small comment ...
-        ...
+        topic_words: list
+            Words that compose one individual topic.
+        word_embedding: gensim.KeyedVectors
+            Mapping between words and vectors for the Word2Vec model. Generate with Gensim.
 
     Returns:
-        Large comment...
+        cosine_distance: float
+            Resultant Cosine Distance for the topic.
+        l1_distance: float
+            Resultant L1 Distance metric for the topic.
+        l2_distance: float
+            Resultant L2 Distance metric for the topic.
+        coordinate_distance: float
+            Resultant Coordinate Distance metric for the topic.
     """
     cosine_distance = 0.0
     l1_distance = 0.0

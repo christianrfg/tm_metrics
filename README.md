@@ -30,7 +30,7 @@ pip install -U .
 
 ## Jupyter Example
 
-In the [Exemple of Quality Metrics in the 20 News Group Dataset](examples/Exemple of Quality Metrics in the 20 News Group Dataset.ipynb) 
+In the [Exemple of Quality Metrics in the 20 News Group Dataset](https://github.com/christianrfg/tm_metrics/blob/master/examples/Exemple%20of%20Quality%20Metrics%20in%20the%2020%20News%20Group%20Dataset.ipynb) 
 we have a example with the usage of the package (tm_metrics). 
 
 In the notebook we use the 20 News Group dataset and the NMF (for topic modeling). We also
